@@ -1,0 +1,4 @@
+obj/
+GameData/KSPFixMapIconCircling/*.dll
+GameData/*.zip
+__pycache__/
