@@ -3,7 +3,7 @@
     <TargetFramework>net472</TargetFramework>
     <AssemblyName>KSPFixMapIconCircling</AssemblyName>
     <RootNamespace>com.github.lhervier.ksp.fix.mapiconcircling</RootNamespace>
-    <Version>0.1.0</Version>
+    <Version>0.1.0-dev</Version>
     <Description>Keeps the centre of mass of an unloaded landed vessel at its place after a long floating origin shift, so that its map icon no longer circles around it in time warp</Description>
     <!-- Straight into the folder that gets copied to the GameData of KSP. -->
     <OutputPath>GameData\KSPFixMapIconCircling</OutputPath>
