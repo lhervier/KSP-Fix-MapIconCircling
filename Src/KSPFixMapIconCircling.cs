@@ -1,3 +1,4 @@
+using System.Reflection;
 using UnityEngine;
 
 namespace com.github.lhervier.ksp.fix.mapiconcircling
@@ -12,7 +13,9 @@ namespace com.github.lhervier.ksp.fix.mapiconcircling
         private void Start()
         {
             Settings.Load();
-            Log.Info($"Version {typeof(KSPFixMapIconCircling).Assembly.GetName().Version}, " +
+            string version = typeof(KSPFixMapIconCircling).Assembly
+                .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
+            Log.Info($"Version {version}, " +
                 $"fixLandedCoMAfterShift {Settings.FixLandedCoMAfterShift}, log level {Log.Level}");
         }
     }
